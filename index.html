@@ -7,80 +7,150 @@
 
     <title>Andreza & Fernando</title>
 
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+
     <style>
+
+        * {
+            box-sizing: border-box;
+        }
 
         body {
             margin: 0;
-            background-color: #f8f8f5;
-            color: #315b68;
-            font-family: Georgia, serif;
+            background: #fffdf9;
+            color: #292929;
+            font-family: "Cormorant Garamond", Georgia, serif;
             text-align: center;
         }
 
+        /* DETALHE DOURADO */
+        .linha-dourada {
+            width: 55px;
+            height: 2px;
+            background: #c9a85d;
+            margin: 18px auto;
+        }
+
+        /* CAPA */
         .capa {
             min-height: 100vh;
+            padding: 45px 22px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 30px;
-            box-sizing: border-box;
+            background: #fffdf9;
         }
 
-        .frase {
-            font-size: 18px;
-            color: #789fa8;
+        .versiculo {
+            max-width: 650px;
+            font-size: 19px;
+            line-height: 1.6;
+            color: #4b4b4b;
             font-style: italic;
         }
 
-        h1 {
-            font-size: 42px;
-            margin: 15px 0;
+        .referencia {
+            font-size: 16px;
+            color: #648b82;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .nomes {
+            font-family: "Great Vibes", cursive;
+            font-size: clamp(55px, 12vw, 90px);
+            font-weight: 400;
+            color: #315b68;
+            margin: 10px 0;
+            line-height: 1.1;
         }
 
         .data {
-            font-size: 20px;
+            font-size: 23px;
+            color: #333;
+            letter-spacing: 1px;
         }
 
-        #contador {
-            margin-top: 25px;
-            padding: 15px 20px;
-            border: 1px solid #789fa8;
-            border-radius: 10px;
-            font-size: 16px;
-            background-color: white;
+        .detalhe {
+            color: #c9a85d;
+            font-size: 24px;
+            margin: 5px;
         }
 
-        .historia {
-            padding: 70px 25px;
-            background-color: white;
-        }
-
-        .historia h2,
-        .foto h2 {
-            font-size: 32px;
-            color: #315b68;
-        }
-
-        .historia p {
-            max-width: 600px;
-            margin: 20px auto;
-            font-size: 18px;
-            line-height: 1.8;
-            color: #555;
-        }
-
+        /* FOTO */
         .foto {
             padding: 70px 20px;
+            background: #ffffff;
+        }
+
+        .foto h2,
+        .historia h2 {
+            font-size: 38px;
+            color: #315b68;
+            font-weight: 500;
         }
 
         .foto img {
-            width: min(90%, 700px);
-            max-width: 100%;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,.15);
+            width: min(92%, 650px);
             display: block;
+            margin: 30px auto 0;
+            border-radius: 18px;
+            box-shadow: 0 12px 35px rgba(0,0,0,.15);
+        }
+
+        /* HISTÓRIA */
+        .historia {
+            padding: 75px 25px;
+            background: #f7faf8;
+            border-top: 1px solid #d7e2df;
+            border-bottom: 1px solid #d7e2df;
+        }
+
+        .historia p {
+            max-width: 650px;
+            margin: 20px auto;
+            font-size: 20px;
+            line-height: 1.8;
+            color: #444;
+        }
+
+        /* CONTADOR */
+        .contador-area {
+            padding: 65px 20px;
+            background: #fffdf9;
+        }
+
+        .contador-area h2 {
+            font-size: 30px;
+            color: #315b68;
+            font-weight: 500;
+        }
+
+        #contador {
+            max-width: 600px;
             margin: 25px auto 0;
+            padding: 20px;
+            border: 1px solid #c9a85d;
+            border-radius: 14px;
+            background: white;
+            color: #315b68;
+            font-size: 20px;
+        }
+
+        /* RODAPÉ */
+        footer {
+            padding: 35px 20px;
+            background: #315b68;
+            color: white;
+            font-size: 17px;
+        }
+
+        footer span {
+            color: #d8c27a;
         }
 
     </style>
@@ -88,32 +158,58 @@
 
 <body>
 
+    <!-- CAPA -->
+
     <section class="capa">
 
-        <p class="frase">
-            O nosso para sempre começa aqui
+        <div class="referencia">
+            Mateus 19:5
+        </div>
+
+        <div class="linha-dourada"></div>
+
+        <p class="versiculo">
+            “Deus uniu nossos caminhos e nós, sob sua bênção,
+            uniremos nossas vidas para sempre.”
         </p>
 
-        <h1>
+        <div class="detalhe">✦</div>
+
+        <h1 class="nomes">
             Andreza & Fernando
         </h1>
+
+        <div class="linha-dourada"></div>
 
         <p class="data">
             19 de junho de 2027 💍
         </p>
 
-        <div id="contador">
-            Carregando...
-        </div>
+    </section>
+
+
+    <!-- NOSSO AMOR -->
+
+    <section class="foto">
+
+        <h2>Nosso amor</h2>
+
+        <div class="linha-dourada"></div>
+
+        <img
+            src="foto-andreza-fernando.jpg"
+            alt="Andreza e Fernando">
 
     </section>
 
 
+    <!-- NOSSA HISTÓRIA -->
+
     <section class="historia">
 
-        <h2>
-            Nossa história 💕
-        </h2>
+        <h2>Nossa história</h2>
+
+        <div class="linha-dourada"></div>
 
         <p>
             Duas histórias que se encontraram,
@@ -124,17 +220,22 @@
     </section>
 
 
-    <section class="foto">
+    <!-- CONTADOR -->
 
-        <h2>
-            Nosso amor 💕
-        </h2>
+    <section class="contador-area">
 
-        <img
-            src="foto-andreza-fernando.jpg"
-            alt="Andreza e Fernando">
+        <h2>Contando os dias para o nosso grande dia ✨</h2>
+
+        <div id="contador">
+            Carregando...
+        </div>
 
     </section>
+
+
+    <footer>
+        Com amor, <span>Andreza & Fernando</span> 💙
+    </footer>
 
 
     <script>
@@ -145,36 +246,26 @@
         function atualizarContador() {
 
             const agora = new Date().getTime();
+            const distancia = dataCasamento - agora;
 
-            const distancia =
-                dataCasamento - agora;
+            const dias = Math.floor(
+                distancia / (1000 * 60 * 60 * 24)
+            );
 
-            const dias =
-                Math.floor(
-                    distancia /
-                    (1000 * 60 * 60 * 24)
-                );
+            const horas = Math.floor(
+                (distancia % (1000 * 60 * 60 * 24)) /
+                (1000 * 60 * 60)
+            );
 
-            const horas =
-                Math.floor(
-                    (distancia %
-                    (1000 * 60 * 60 * 24)) /
-                    (1000 * 60 * 60)
-                );
+            const minutos = Math.floor(
+                (distancia % (1000 * 60 * 60)) /
+                (1000 * 60)
+            );
 
-            const minutos =
-                Math.floor(
-                    (distancia %
-                    (1000 * 60 * 60)) /
-                    (1000 * 60)
-                );
-
-            const segundos =
-                Math.floor(
-                    (distancia %
-                    (1000 * 60)) /
-                    1000
-                );
+            const segundos = Math.floor(
+                (distancia % (1000 * 60)) /
+                1000
+            );
 
             document.getElementById("contador").innerHTML =
                 dias + " dias · " +
@@ -185,10 +276,7 @@
 
         atualizarContador();
 
-        setInterval(
-            atualizarContador,
-            1000
-        );
+        setInterval(atualizarContador, 1000);
 
     </script>
 
