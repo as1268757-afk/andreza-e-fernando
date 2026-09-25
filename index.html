@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Andreza & Fernando</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            background-color: #f8f8f5;
+            color: #315b68;
+            font-family: Georgia, serif;
+            text-align: center;
+        }
+
+        .capa {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        .frase {
+            font-size: 18px;
+            color: #789fa8;
+            font-style: italic;
+        }
+
+        h1 {
+            font-size: 42px;
+            margin: 15px 0;
+        }
+
+        .data {
+            font-size: 20px;
+        }
+
+        #contador {
+            margin-top: 25px;
+            padding: 15px 20px;
+            border: 1px solid #789fa8;
+            border-radius: 10px;
+            font-size: 16px;
+            background-color: white;
+        }
+
+        .historia {
+            padding: 70px 25px;
+            background-color: white;
+        }
+
+        .historia h2,
+        .foto h2 {
+            font-size: 32px;
+            color: #315b68;
+        }
+
+        .historia p {
+            max-width: 600px;
+            margin: 20px auto;
+            font-size: 18px;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .foto {
+            padding: 70px 20px;
+        }
+
+        .foto img {
+            width: min(90%, 700px);
+            max-width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,.15);
+            display: block;
+            margin: 25px auto 0;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <section class="capa">
+
+        <p class="frase">
+            O nosso para sempre começa aqui
+        </p>
+
+        <h1>
+            Andreza & Fernando
+        </h1>
+
+        <p class="data">
+            19 de junho de 2027 💍
+        </p>
+
+        <div id="contador">
+            Carregando...
+        </div>
+
+    </section>
+
+
+    <section class="historia">
+
+        <h2>
+            Nossa história 💕
+        </h2>
+
+        <p>
+            Duas histórias que se encontraram,
+            dois corações que escolheram caminhar juntos
+            e um amor que agora celebramos para sempre.
+        </p>
+
+    </section>
+
+
+    <section class="foto">
+
+        <h2>
+            Nosso amor 💕
+        </h2>
+
+        <img
+            src="foto-andreza-fernando.jpg"
+            alt="Andreza e Fernando">
+
+    </section>
+
+
+    <script>
+
+        const dataCasamento =
+            new Date("2027-06-19T16:00:00").getTime();
+
+        function atualizarContador() {
+
+            const agora = new Date().getTime();
+
+            const distancia =
+                dataCasamento - agora;
+
+            const dias =
+                Math.floor(
+                    distancia /
+                    (1000 * 60 * 60 * 24)
+                );
+
+            const horas =
+                Math.floor(
+                    (distancia %
+                    (1000 * 60 * 60 * 24)) /
+                    (1000 * 60 * 60)
+                );
+
+            const minutos =
+                Math.floor(
+                    (distancia %
+                    (1000 * 60 * 60)) /
+                    (1000 * 60)
+                );
+
+            const segundos =
+                Math.floor(
+                    (distancia %
+                    (1000 * 60)) /
+                    1000
+                );
+
+            document.getElementById("contador").innerHTML =
+                dias + " dias · " +
+                horas + " horas · " +
+                minutos + " minutos · " +
+                segundos + " segundos";
+        }
+
+        atualizarContador();
+
+        setInterval(
+            atualizarContador,
+            1000
+        );
+
+    </script>
+
+</body>
+
+</html>
