@@ -53,4 +53,390 @@ body {
   background: var(--dourado);
 }
 
-.orn
+.ornamento {
+  color: var(--verde);
+  font-size: 22px;
+}
+
+/* CAPA */
+
+.capa {
+  min-height: 100vh;
+  padding: 45px 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background:
+    radial-gradient(circle at top left, #edf4f2 0, transparent 25%),
+    radial-gradient(circle at bottom right, #e5f0f2 0, transparent 25%),
+    var(--fundo);
+}
+
+.inicial {
+  font-size: 17px;
+  letter-spacing: 3px;
+  color: var(--verde);
+  text-transform: uppercase;
+}
+
+.nomes {
+  font-family: "Great Vibes", cursive;
+  font-size: clamp(58px, 13vw, 100px);
+  font-weight: 400;
+  color: #7198a1;
+  margin: 12px 0 4px;
+  line-height: 1.1;
+}
+
+.data {
+  font-size: 23px;
+  color: var(--marrom);
+  letter-spacing: 1px;
+  margin-top: 8px;
+}
+
+.coracao {
+  color: var(--dourado);
+  font-size: 23px;
+  margin: 10px;
+}
+
+.versiculo {
+  max-width: 650px;
+  margin: 25px auto 8px;
+  font-size: 20px;
+  line-height: 1.7;
+  color: var(--marrom);
+  font-style: italic;
+}
+
+.referencia {
+  font-size: 16px;
+  color: var(--verde);
+  letter-spacing: 1px;
+}
+
+/* FOTO */
+
+.foto {
+  padding: 75px 20px;
+  background: white;
+}
+
+.titulo {
+  font-size: 39px;
+  color: var(--marrom);
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.foto img {
+  width: min(92%, 650px);
+  display: block;
+  margin: 30px auto 0;
+  border-radius: 22px;
+  border: 5px solid white;
+  box-shadow: 0 12px 35px rgba(65, 65, 65, 0.15);
+}
+
+/* HISTÓRIA */
+
+.historia {
+  padding: 75px 25px;
+  background: #f5f9f7;
+  border-top: 1px solid #dce8e3;
+  border-bottom: 1px solid #dce8e3;
+}
+
+.historia p {
+  max-width: 650px;
+  margin: 20px auto;
+  font-size: 21px;
+  line-height: 1.8;
+  color: var(--marrom);
+}
+
+/* GRANDE DIA */
+
+.grande-dia {
+  padding: 70px 20px;
+  background: var(--fundo);
+}
+
+.info {
+  max-width: 650px;
+  margin: 30px auto;
+  display: grid;
+  gap: 18px;
+}
+
+.card {
+  padding: 22px;
+  background: white;
+  border: 1px solid #d9e5e3;
+  border-radius: 18px;
+  box-shadow: 0 5px 18px rgba(70, 70, 70, 0.06);
+}
+
+.card .icone {
+  font-size: 25px;
+  color: var(--serenity);
+}
+
+.card h3 {
+  margin: 8px 0;
+  color: var(--marrom);
+  font-size: 23px;
+}
+
+.card p {
+  margin: 0;
+  color: #665850;
+  font-size: 18px;
+}
+
+/* CONTADOR */
+
+.contador-area {
+  padding: 70px 20px;
+  background: #f7faf8;
+}
+
+.contador-area h2 {
+  font-size: 30px;
+  color: var(--marrom);
+  font-weight: 500;
+}
+
+#contador {
+  max-width: 600px;
+  margin: 25px auto 0;
+  padding: 22px;
+  border: 1px solid var(--dourado);
+  border-radius: 16px;
+  background: white;
+  color: #668b94;
+  font-size: 20px;
+}
+
+/* RODAPÉ */
+
+footer {
+  padding: 38px 20px;
+  background: #7198a1;
+  color: white;
+  font-size: 18px;
+}
+
+footer span {
+  color: #f1d98a;
+  font-family: "Great Vibes", cursive;
+  font-size: 27px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- CAPA -->
+
+<section class="capa">
+
+  <div class="inicial">
+    Nosso grande dia
+  </div>
+
+  <div class="linha">
+    <span class="ornamento">🌿</span>
+    <span>✦</span>
+    <span class="ornamento">🌿</span>
+  </div>
+
+  <h1 class="nomes">
+    Andreza & Fernando
+  </h1>
+
+  <div class="coracao">
+    ♡
+  </div>
+
+  <p class="data">
+    19 de junho de 2027 💍
+  </p>
+
+  <div class="linha">
+    <span>✦</span>
+    <span>♡</span>
+    <span>✦</span>
+  </div>
+
+  <p class="versiculo">
+    “Deus uniu nossos caminhos e nós, sob sua bênção,
+    uniremos nossas vidas para sempre.”
+  </p>
+
+  <div class="referencia">
+    Inspirado em Mateus 19:5
+  </div>
+
+</section>
+
+
+<!-- FOTO -->
+
+<section class="foto">
+
+  <h2 class="titulo">
+    Nosso amor
+  </h2>
+
+  <div class="linha">
+    <span>✦</span>
+    <span>♡</span>
+    <span>✦</span>
+  </div>
+
+  <img
+    src="foto-andreza-fernando.jpg"
+    alt="Andreza e Fernando"
+  >
+
+</section>
+
+
+<!-- HISTÓRIA -->
+
+<section class="historia">
+
+  <h2 class="titulo">
+    Nossa história
+  </h2>
+
+  <div class="linha">
+    <span>🌿</span>
+    <span>✦</span>
+    <span>🌿</span>
+  </div>
+
+  <p>
+    Duas histórias que se encontraram, dois corações que
+    escolheram caminhar juntos e um amor que agora
+    celebramos para sempre.
+  </p>
+
+</section>
+
+
+<!-- GRANDE DIA -->
+
+<section class="grande-dia">
+
+  <h2 class="titulo">
+    Nosso grande dia
+  </h2>
+
+  <div class="linha">
+    <span>✦</span>
+    <span>♡</span>
+    <span>✦</span>
+  </div>
+
+  <div class="info">
+
+    <div class="card">
+      <div class="icone">💒</div>
+      <h3>Cerimônia</h3>
+      <p>Um momento especial para celebrar nossa união.</p>
+    </div>
+
+    <div class="card">
+      <div class="icone">🥂</div>
+      <h3>Recepção</h3>
+      <p>Depois da cerimônia, vamos celebrar juntos!</p>
+    </div>
+
+    <div class="card">
+      <div class="icone">🌿</div>
+      <h3>Um dia para guardar no coração</h3>
+      <p>
+        Amor, família, alegria e o começo de uma nova história.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CONTADOR -->
+
+<section class="contador-area">
+
+  <h2>
+    Contando os dias para o nosso grande dia ✨
+  </h2>
+
+  <div id="contador">
+    Carregando...
+  </div>
+
+</section>
+
+
+<!-- RODAPÉ -->
+
+<footer>
+  Com amor,
+  <span>Andreza & Fernando</span>
+  💙
+</footer>
+
+
+<script>
+
+const dataCasamento =
+  new Date("2027-06-19T16:00:00").getTime();
+
+function atualizarContador() {
+
+  const agora = new Date().getTime();
+
+  const distancia = dataCasamento - agora;
+
+  const dias = Math.floor(
+    distancia / (1000 * 60 * 60 * 24)
+  );
+
+  const horas = Math.floor(
+    (distancia % (1000 * 60 * 60 * 24))
+    / (1000 * 60 * 60)
+  );
+
+  const minutos = Math.floor(
+    (distancia % (1000 * 60 * 60))
+    / (1000 * 60)
+  );
+
+  const segundos = Math.floor(
+    (distancia % (1000 * 60))
+    / 1000
+  );
+
+  document.getElementById("contador").innerHTML =
+    dias + " dias · " +
+    horas + " horas · " +
+    minutos + " minutos · " +
+    segundos + " segundos";
+}
+
+atualizarContador();
+
+setInterval(atualizarContador, 1000);
+
+</script>
+
+</body>
+</html>
